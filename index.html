@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سعيد علي | سيرة ذاتية</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <img src="img/saeed-pc.jpeg" alt="صورة شخصية" class="avatar" id="avatarImg"
+          onerror="this.src='https://ui-avatars.com/api/?name=%D8%B3%D8%B9%D9%8A%D8%AF+%D8%B9%D9%84%D9%8A&background=c9a96e&color=fff&size=200&font-size=0.4'" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-tag" data-ar="إداري · سكرتير قانوني · تقني" data-en="Administrative · Legal Secretary · Tech">إداري · سكرتير قانوني · تقني</p>
+        <!-- <h1 class="hero-name" data-ar="سعيد علي" data-en="Saeed Ali">سعيد علي</h1> -->
+        <p class="hero-sub"
+          data-ar="إداري وسكرتير قانوني بخبرة في إدارة المكاتب القانونية والعقارات، مع مهارات تقنية في التصميم والأنظمة."
+          data-en="Administrative & Legal Secretary with experience in managing legal offices and real estate, with technical skills in design and systems.">
+         إداري وسكرتير قانوني بخبرة في إدارة الشركات القانونية والعقارية ، مع مهارات تقنية في التصميم وتطوير الأعمال.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+          <a href="#experience" class="btn-outline" data-ar="الخبرات" data-en="Experience">الخبرات</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- Nav -->
+  <nav class="navbar" id="navbar">
+    <!-- <div class="nav-brand" data-ar="سعيد علي" data-en="Saeed Ali">سعيد علي</div> -->
+    <div class="nav-links">
+      <a href="#about"      data-ar="عني"      data-en="About">عني</a>
+      <a href="#experience" data-ar="الخبرة"   data-en="Experience">الخبرة</a>
+      <a href="#skills"     data-ar="المهارات" data-en="Skills">المهارات</a>
+      <a href="#courses"    data-ar="الدورات"  data-en="Courses">الدورات</a>
+      <a href="#contact"    data-ar="التواصل"  data-en="Contact">التواصل</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+        <i class="fas fa-globe"></i>
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="nav-menu-btn" onclick="toggleMobileNav()"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about"      onclick="toggleMobileNav()" data-ar="عني"      data-en="About">عني</a>
+    <a href="#experience" onclick="toggleMobileNav()" data-ar="الخبرة"   data-en="Experience">الخبرة</a>
+    <a href="#skills"     onclick="toggleMobileNav()" data-ar="المهارات" data-en="Skills">المهارات</a>
+    <a href="#courses"    onclick="toggleMobileNav()" data-ar="الدورات"  data-en="Courses">الدورات</a>
+    <a href="#contact"    onclick="toggleMobileNav()" data-ar="التواصل"  data-en="Contact">التواصل</a>
+  </div>
+
+  <!-- About -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label" data-ar="نبذة عني" data-en="About Me">نبذة عني</div>
+      <h2 class="section-title" data-ar="من أنا؟" data-en="Who Am I?">من أنا؟</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-scale-balanced"></i></div>
+          <h3 data-ar="سكرتير قانوني" data-en="Legal Secretary">سكرتير قانوني</h3>
+          <p data-ar="خبرة في إدارة المكاتب القانونية ومتابعة القضايا والمواقع الحكومية."
+             data-en="Experience in managing legal offices and following up on cases and government platforms.">
+            خبرة في إدارة المكاتب القانونية ومتابعة القضايا والمواقع الحكومية.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-building"></i></div>
+          <h3 data-ar="إدارة أملاك" data-en="Property Management">إدارة أملاك</h3>
+          <p data-ar="توليت إدارة العديد من العقارات ومتابعة أعمال الصيانة والإيجارات في جدة ومكة والطائف."
+             data-en="Managed multiple properties and oversaw maintenance and leasing operations in Jeddah, Mecca, and Taif.">
+            توليت إدارة العديد من العقارات ومتابعة أعمال الصيانة والإيجارات في جدة ومكة والطائف.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 data-ar="خبرة إدارية تقنية" data-en="Technical administrative experience.">خبرة تقنية</h3>
+          <p data-ar="تعاونت مع عدة مؤسسات في تطوير الاعمال والتحول الرقمي وتصميم أنظمة داخلية لتسهيل العمل."
+             data-en="Collaborated with several organizations in business development, digital transformation, and designing internal systems to improve workflow efficiency.">
+            تعاونت مع عدة مؤسسات في تطوير الاعمال والتحول الرقمي بتصميم أنظمة داخلية لتسهيل العمل.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section exp-section" id="experience">
+    <div class="parallax-mid" id="parallaxMid"></div>
+    <div class="container">
+      <div class="section-label" data-ar="المسيرة المهنية" data-en="Career Path">المسيرة المهنية</div>
+      <h2 class="section-title light" data-ar="الخبرة الوظيفية" data-en="Work Experience">الخبرة الوظيفية</h2>
+      <div class="timeline"> 
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-scale-balanced"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-year">2026 </span>
+              <span class="tl-location"><i class="fas fa-location-dot"></i>
+                <span data-ar="جدة" data-en="Jeddah">جدة</span>
+              </span>
+            </div>
+            <h3 data-ar="مدير الشؤون الادارية " data-en="Administrative Affairs Manager">مدير الشؤون الادارية  </h3>
+            <p class="tl-company"
+               data-ar="مجموعة الشيخ محمد بن سعد التويم القانونية"
+               data-en="Sarh AlMurafaa Law Firm and Legal Consultations">
+              شركة صرح المرافعة للمحاماة والاستشارات القانونية
+            </p>
+          </div>
+        </div>
+        
+        <!-- <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-scale-balanced"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-year">  2025</span>
+              <span class="tl-location"><i class="fas fa-location-dot"></i>
+                <span data-ar="جدة" data-en="Jeddah">جدة</span>
+              </span>
+            </div>
+            <h3 data-ar="مستشار قانوني" data-en="Legal Consultant">مستشار قانوني</h3>
+            <p class="tl-company"
+               data-ar="مجموعة الشيخ محمد بن سعد التويم القانونية"
+               data-en="Sheikh Mohammed bin Saad Al-Tuwaim Legal Group">
+              مجموعة الشيخ محمد بن سعد التويم القانونية
+            </p>
+          </div>
+        </div> -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-scale-balanced"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-year">2019 – 2025</span>
+              <span class="tl-location"><i class="fas fa-location-dot"></i>
+                <span data-ar="جدة" data-en="Jeddah">جدة</span>
+              </span>
+            </div>
+            <h3 data-ar="سكرتير قانوني" data-en="Legal Secretary">سكرتير قانوني</h3>
+            <p class="tl-company"
+               data-ar="مجموعة الشيخ محمد بن سعد التويم القانونية"
+               data-en="Sheikh Mohammed bin Saad Al-Tuwaim Legal Group">
+              مجموعة الشيخ محمد بن سعد التويم القانونية
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-key"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-year" data-ar="2020 – حتى الآن" data-en="2020 – Present">2020 – حتى الآن</span>
+              <span class="tl-location"><i class="fas fa-location-dot"></i>
+                <span data-ar="جدة ومكة" data-en="Jeddah & Mecca">جدة ومكة</span>
+              </span>
+            </div>
+            <h3 data-ar="إدارة أملاك" data-en="Property Manager">إدارة أملاك</h3>
+            <p class="tl-company"
+               data-ar="أملاك الشيخ محمد التويم وتركي غربي"
+               data-en="Sheikh Mohammed Al-Tuwaim & Turki Gharbi Properties">
+              أملاك الشيخ محمد التويم وتركي غربي
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-star-and-crescent"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="tl-year"
+                data-ar="أعمال موسمية وتطوعية"
+                data-en="Seasonal & Voluntary Work">أعمال موسمية وتطوعية</span>
+              <span class="tl-location"><i class="fas fa-location-dot"></i>
+                <span data-ar="مكة المكرمة" data-en="Mecca">مكة المكرمة</span>
+              </span>
+            </div>
+            <h3 data-ar="تطوع ومهام موسمية" data-en="Volunteer & Seasonal Roles">تطوع ومهام موسمية</h3>
+            <ul class="tl-list">
+              <li data-ar="متطوع – كشافة شباب مكة، مدخل بيانات (موسم رمضان)"
+                  data-en="Volunteer – Mecca Youth Scouts, Data Entry (Ramadan Season)">
+                متطوع – كشافة شباب مكة، مدخل بيانات (موسم رمضان)
+              </li>
+              <li data-ar="مشرف سقيا زمزم في الحرم المكي (موسم رمضان)"
+                  data-en="Zamzam Water Supervisor at the Grand Mosque (Ramadan Season)">
+                مشرف سقيا زمزم في الحرم المكي (موسم رمضان)
+              </li>
+              <li data-ar="مشرف تنظيم حشود – قطار الحرمين (مواسم الحج)"
+                  data-en="Crowd Management Supervisor – Haramain Train (Hajj Seasons)">
+                مشرف تنظيم حشود – قطار الحرمين (مواسم الحج)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label" data-ar="الكفاءات" data-en="Competencies">الكفاءات</div>
+      <h2 class="section-title" data-ar="المهارات" data-en="Skills">المهارات</h2>
+      <div class="skills-grid">
+
+        <div class="skill-item reveal">
+          <div class="skill-icon ms"><i class="fas fa-file-word"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Microsoft Word</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-icon excel"><i class="fas fa-file-excel"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Microsoft Excel</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-icon ppt"><i class="fas fa-file-powerpoint"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">PowerPoint</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-icon ps"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Photoshop</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:60%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-icon ai"><i class="fas fa-pen-nib"></i></div>
+          <div class="skill-info">
+            <span class="skill-name"> Illustrator</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <div class="skill-icon dev"><i class="fas fa-code"></i></div>
+          <div class="skill-info">
+            <span class="skill-name" data-ar="تطوير ويب" data-en="Web Development">Web Development</span>
+            <div class="skill-bar"><div class="skill-fill" style="--pct:30%"></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Languages -->
+
+      <h2 class="section-title" data-ar="اللغات" data-en="Languages">اللغات</h2>
+      <div class="skills-grid">
+
+          <div class="skill-item reveal">
+            <div class="skill-icon dev"><i class="fas fa-language"></i></div>
+              <div class="skill-info">
+                <span class="skill-name" data-ar=" العربية" data-en="arabc">العربية</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:98%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-item reveal">
+            <div class="skill-icon dev"><i class="fas fa-language"></i></div>
+              <div class="skill-info">
+                <span class="skill-name" data-ar=" العربية" data-en="EN">الانجليزية</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:55%"></div></div>
+            </div>
+          </div>
+
+
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="section courses-section" id="courses">
+    <div class="container">
+      <div class="section-label" data-ar="التطوير المهني" data-en="Professional Development">التطوير المهني</div>
+      <h2 class="section-title light" data-ar="الدورات التدريبية" data-en="Training Courses">الدورات التدريبية</h2>
+      <div class="courses-grid">
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="course-body">
+            <span class="course-year">2019</span>
+            <h4 data-ar="إدارة المكاتب والسكرتارية" data-en="Office Management & Secretarial">إدارة المكاتب والسكرتارية</h4>
+            <p data-ar="معهد مفاهيم" data-en="Mafaheem Institute">معهد مفاهيم</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-desktop"></i></div>
+          <div class="course-body">
+            <span class="course-year">2019</span>
+            <h4 data-ar="احتراف برامج الأوفيس" data-en="Microsoft Office Mastery">احتراف برامج الأوفيس</h4>
+            <p data-ar="أكاديمية رواق التعليمية" data-en="Rwaq Educational Academy">أكاديمية رواق التعليمية</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-gavel"></i></div>
+          <div class="course-body">
+            <span class="course-year">2020 – 2021</span>
+            <h4 data-ar="دورات قانونية" data-en="Legal Courses">دورات قانونية</h4>
+            <p data-ar="الهيئة السعودية للمحامين · أكاديمية رواق" data-en="Saudi Bar Association · Rwaq Academy">الهيئة السعودية للمحامين · أكاديمية رواق</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="course-body">
+            <span class="course-year">2023</span>
+            <h4 data-ar="الحاسب والشبكات والأمن السيبراني" data-en="Computing, Networks & Cybersecurity">الحاسب والشبكات والأمن السيبراني</h4>
+            <p data-ar="الاتحاد السعودي للأمن السيبراني · منصة سطر" data-en="Saudi Cybersecurity Federation · Satr Platform">الاتحاد السعودي للأمن السيبراني · منصة سطر</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-palette"></i></div>
+          <div class="course-body">
+            <span class="course-year">2019 – 2020</span>
+            <h4 data-ar="التصميم الجرافيكي" data-en="Graphic Design">التصميم الجرافيكي</h4>
+            <p data-ar="منصة إدراك · منصة ندرس" data-en="Edraak Platform · Ndrass Platform">منصة إدراك · منصة ندرس</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="course-body">
+            <span class="course-year">2022</span>
+            <h4 data-ar="مبادئ تصميم UI/UX" data-en="UI/UX Design Principles">مبادئ تصميم UI/UX</h4>
+            <p data-ar="منصة إدراك التعليمية" data-en="Edraak Educational Platform">منصة إدراك التعليمية</p>
+          </div>
+        </div>
+
+        <div class="course-card reveal">
+          <div class="course-icon"><i class="fas fa-code"></i></div>
+          <div class="course-body">
+            <span class="course-year">2024 – 2025</span>
+            <h4 data-ar="برمجة وتطوير مواقع الويب" data-en="Web Development & Programming">برمجة وتطوير مواقع الويب</h4>
+            <p data-ar="معهد هرماس للتدريب العالي – كورس مكثف (سنة ونصف)"
+               data-en="Hermas Institute for Advanced Training – Intensive Course (1.5 years)">
+              معهد هرماس للتدريب العالي – كورس مكثف (سنة ونصف)
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="parallax-bottom" id="parallaxBottom"></div>
+    <div class="container">
+      <div class="section-label light" data-ar="تواصل معي" data-en="Get In Touch">تواصل معي</div>
+      <h2 class="section-title light" data-ar="بيانات التواصل" data-en="Contact Information">بيانات التواصل</h2>
+      <div class="contact-grid">
+
+        <a href="mailto:Saeed.bn.ali9@gmail.com" class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="contact-label" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</p>
+            <p class="contact-value">Saeed.bn.ali9&#64;gmail.com</p>
+          </div>
+        </a>
+
+        <a href="tel:+966500005555" class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-mobile-screen"></i></div>
+          <div>
+            <p class="contact-label" data-ar="الجوال" data-en="Mobile">الجوال</p>
+            <p class="contact-value">0582478803</p>
+          </div>
+        </a>
+
+        <!-- <div class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <p class="contact-label" data-ar="الموقع" data-en="Location">الموقع</p>
+            <p class="contact-value"
+               data-ar="جدة، المملكة العربية السعودية"
+               data-en="Jeddah, Saudi Arabia">
+              جدة، المملكة العربية السعودية
+            </p>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p data-ar="© 2025 سعيد · جميع الحقوق محفوظة"
+       data-en="© 2025 Saeed Ali · All Rights Reserved">
+      © 2025 سعيد  · جميع الحقوق محفوظة
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
