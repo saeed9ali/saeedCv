@@ -13,7 +13,7 @@ function toggleLang() {
   document.documentElement.dir = isEn ? 'ltr' : 'rtl';
   document.body.classList.toggle('ltr', isEn);
 
-  document.getElementById('langLabel').textContent = isEn ? 'ع' : 'EN';
+  document.getElementById('langLabel').textContent = isEn ? 'العربية' : 'English';
 
   document.querySelectorAll('[data-ar]').forEach(el => {
     const target = isEn ? el.dataset.en : el.dataset.ar;
