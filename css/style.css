@@ -283,7 +283,7 @@ img { max-width: 100%; }
 }
 .scroll-hint {
   position: absolute;
-  bottom: 12%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--gold);
